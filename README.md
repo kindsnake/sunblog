@@ -1,3 +1,5 @@
 # sunblog
+
 A wordpress blog
-学习执着wordpress主题。
+
+学习制作wordpress主题。
