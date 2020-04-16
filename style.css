@@ -5,63 +5,328 @@ body, h1, h2, h3, h4, h5, h6, address, blockquote, dd, dl, hr, p, form{
 body{
     margin: 0;
     font-family: Arial, Helvetica, Georgia, Sans-serif;
-    font-size: 12px;
-    text-align: center;
+    font-size: 12pt;
+    font-size: 0.75rem;
     vertical-align: top;
-    background: #ffffff;
     color: #000000;
 }
 h1{
     font-family: Georgia, Sans-serif;
-    font-size: 24px;
+    font-size: 18pt;
+    font-size: 1.5rem;
     padding: 0 0 10px 0;
 }
 a:link, a:visited{
-    text-decoration: underline;
+    text-decoration: none;
     color: #336699;
 }
 a:hover, a:active{
     text-decoration: none;
     color: #ff0000;
 }
-p{
-    padding: 10px 0 0 0;
-}
 #wrapper{
     margin: 0 auto 0 auto;
-    width: 900px;
+    width: 100%;
     text-align: left;
+    background: #ccc;
+}
+/**
+* 2-Header
+*/
+#header-box{
+    width: 100%;
+    height: 100px;
+    background-color: #393939;
 }
 #header{
-    float: left;
-    width: 900px;
+    margin: 0 auto;
+    width: 1000px;
+    height: 100px;
 }
+#title-box {
+    width: 300px;
+    height: 55px;
+    margin-left: 25px;
+    display: block;
+    float: left;
+}
+#title {
+    margin: 0;
+    padding: 0;
+}
+#title a {
+    color: #FFF;
+}
+#sub-title {
+    color: #FFF;
+    margin: 5px 0 0 0;
+    padding: 0;
+    font-size: 9pt;
+}
+#header-split-box {
+    height: 55px;
+    width:350px;
+    display: block;
+    float: left;
+}
+#header-search-box {
+    height: 55px;
+    width:300px;
+    display: block;
+    float: left;
+    margin-right: 25px;
+}
+#header-search-box #searchform {
+    line-height: 55px;
+}
+
+#main-area {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/***************************************
+* 2-Navigation
+* 
+* 2.1-Main Navigation
+****************************************/
+.nav-box {
+    margin: 0 0 10px 0;
+    padding: 0;
+    width: 100%;
+    height: 40px;
+    background: #666;
+}
+.nav {
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+    font-size: 10pt;
+}
+.nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: #FFF;
+    padding: 0 10px;
+}
+.nav ul li:hover {
+    background-color: #111;
+}
+.nav ul li ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: #666;
+}
+.nav ul li:hover ul {
+    display: block;
+}
+.nav ul li ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    float: left;
+    text-align: left;
+    list-style: none;
+    clear: both;
+    width: 100px;}
+.nav ul li ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: #FFF;
+    padding: 0 0 0 10px;
+}
+.nav ul li ul li:hover {
+    background-color: #111;
+}
+.nav ul li ul li ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #666;
+    right: -100px;
+    top: 0;
+}
+.nav ul li ul li ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    float: left;
+    text-align: left;
+    list-style: none;
+    clear: both;
+    width: 100px;
+    height: 40px;
+}
+.nav ul li ul li ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 40px;
+    color: #FFF;
+    padding: 0 0 0 10px;
+}
+.nav ul li:hover ul li ul {
+    display: none;
+}
+.nav ul li ul li:hover ul {
+    display: block;
+}
+.nav ul li ul li ul li:hover {
+    background-color: #111;
+}
+/***************************************
+* 2.2 Top Navigation
+***************************************/
+.top-menu {
+    width: 1000px;
+    height: 20px;
+    font-size: 9pt;
+}
+.top-menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.top-menu ul li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    float: right;
+    text-align: center;
+    position: relative;
+}
+.top-menu ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 20px;
+    color: #FFF;
+    padding: 0 10px;
+}
+.top-menu ul li:hover {
+    background-color: #111;
+}
+.top-menu ul li ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background: #666;
+}
+.top-menu ul li:hover ul {
+    display: block;
+}
+.top-menu ul li ul li {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    float: left;
+    text-align: left;
+    list-style: none;
+    clear: both;
+    width: 100px;}
+.top-menu ul li ul li a {
+    display: block;
+    text-decoration: none;
+    line-height: 20px;
+    color: #FFF;
+    padding: 0 0 0 10px;
+}
+.top-menu ul li ul li:hover {
+    background-color: #111;
+}
+
+
+
+
 #container{
+    width: 750px;
+    display: block;
     float: left;
-    width: 650px;
+    background-color: #FFF;
 }
+
 .post{
     padding: 10px 0 10px 0;
+    width: 750px;
 }
 .post h2{
     font-family: Georgia, Sans-serif;
-    font-size: 18px;
+    font-size: 16pt;
+    width: 700px;
+    display: block;
+    float: left;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .entry{
     line-height: 18px;
+    width: 700px;
+    display: block;
+    float: left;
+    margin-left: 25px;
+}
+.entry p {
+    font-size: 10.5pt;
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+.entry pre {
+    overflow: scroll;
+}
+.entry .wp-caption {
+    margin: 10px auto;
+}
+.entry .wp-caption-text {
+    text-align: center;
+}
+.entry h3 {
+    font-size: 14pt;
+    margin: 15px 0;
 }
 p.postmetadata{
     border-top: 1px solid #ccc;
     margin: 10px 0 0 0;
 }
 .navigation{
-    padding: 10px 0 0 0;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     line-height: 18px;
+    width: 700px;
+    margin-left: 25px;
+    clear: both;
 }
+/**
+* SideBar
+*/
 .sidebar{
-    float: left;
+    display: block;
+    float: right;
     width: 240px;
     background: #eeeeee;
     margin: 0 0 0 10px;
@@ -79,13 +344,16 @@ p.postmetadata{
     font-family: Georgia, Sans-serif;
     font-size: 14px;
 }
-table#wp-calendar{
+#wp-calendar table{
     width: 100%;
 }
 .comments-template{
-    margin: 10px 0 0;
+    margin: 10px 0 20px 25px;
     border-top: 1px solid #ccc;
     padding: 10px 0 0;
+    width: 700px;
+    display: block;
+    float: left;
 }
 .comments-template ol{
     margin: 0;
@@ -112,12 +380,29 @@ table#wp-calendar{
     font-family: Arial, Helvetica, Georgia, Sans-serif;
     font-size: 12px;
 }
-#footer{
-    clear: both;
-    float: left;
-    width: 750px;
-    margin: 10px 0 0 0;
+#not-found {
+    margin: 20px auto;
 }
-#footer p{
+/**
+* Footer
+*/
+#footer-box {
+    width: 100%;
+    min-height: 60px;
+    background-color: #363636;
+    clear: both;
+    position: relative;
+}
+#footer{
+    font-size: 12px;
     line-height: 18px;
+    width: 1000px;
+    height: 36px;
+    color: #ddd;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-top: -18px;
+    margin-left: -500px;
 }

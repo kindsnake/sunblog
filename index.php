@@ -1,11 +1,6 @@
 <?php get_header(); ?>
-<body>
-<div id="wrapper">
-    <div id="header">
-        <h1><a name="toc-3"></a><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></h1>
-        <?php bloginfo('description'); ?>
-    </div>
-    <div id="container">
+    <div id="main-area">
+        <div id="container">
         <?php if(have_posts()): ?>
             <?php while(have_posts()): the_post(); ?>
                 <div class="post" id="post-<?php the_ID(); ?>">
@@ -25,11 +20,12 @@
             </div>
             <?php else: ?>
                 <div class="post" id="post-<?php the_ID(); ?>">
-                    <h2><?php _e('Not Found.'); ?></h2>
+                    <h2><span id="not-found"><?php _e('Not Found.'); ?></span></h2>
                 </div>
         <?php endif; ?>
+        </div>
+        <?php get_sidebar(); ?>
     </div>
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
 </div>
 </body>
