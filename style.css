@@ -383,15 +383,16 @@ p.postmetadata{
 #not-found {
     margin: 20px auto;
 }
-/**
+/***************************************
 * Footer
-*/
+***************************************/
 #footer-box {
     width: 100%;
     min-height: 60px;
     background-color: #363636;
     clear: both;
     position: relative;
+    margin-top: 10px;
 }
 #footer{
     font-size: 12px;
