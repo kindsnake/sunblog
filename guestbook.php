@@ -14,7 +14,6 @@
                     <div class="entry">
                         <?php the_content(); ?>
                         <?php wp_link_pages('<strong>Pages:</strong>', '', 'number'); ?>
-                        <?php edit_post_link('Edit', ' | ', ''); ?>
                         
                     </div>
                     <div class="comments-template">
