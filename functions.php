@@ -6,6 +6,12 @@ set_post_thumbnail_size(200, 150, true); // 图片宽度与高度
 add_theme_support( 'html5', array(/***添加主题对html5支持***/
                    'search-form', 'comment-form', 'comment-list', 'gallery', 'caption'
 ) );
+//自定义logo
+add_theme_support( 'custom-logo', array(
+        'height'      => 248,
+        'width'       => 248,
+        'flex-height' => true,
+    ) );
 
 //调用后台侧栏widget
 if (function_exists('register_sidebar'))
