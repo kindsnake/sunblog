@@ -14,7 +14,13 @@
                             </p>
                         </div>
                         <div class="entry">
-                            <div class="post_thumbnail"><?php the_post_thumbnail(); ?></div>
+                            <div class="post_thumbnail">
+                                <?php if ( has_post_thumbnail() ) { ?>
+                                <?php the_post_thumbnail(); ?>
+                                <?php } else {?>
+                                <img src="<?php bloginfo('template_url'); ?>/img/default-thumbnail.jpg" />
+                                <?php } ?>
+                            </div>
                             <div class="index-post-list">
                                 <?php the_excerpt(); ?>
                                 <p class="read-more"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php _e('继续阅读'.'&raquo;'); ?></a></p>
