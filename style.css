@@ -526,6 +526,56 @@ a:hover, a:active{
 .sidebar .tagcloud {
     margin: 10px;
 }
+
+.calendar_wrap {
+    margin: 10px;
+    min-height: 30px;
+}
+.calendar_wrap table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.calendar_wrap caption {
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    margin: 0 0 5px 0;
+    padding: 0;
+}
+.calendar_wrap thead {
+    text-align: center;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+.calendar_wrap tbody .pad {
+    background-color: #FFF;
+}
+.calendar_wrap tbody td {
+    background: #f5f5f5;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+}
+.calendar_wrap tbody td:hover {
+    background: #ccc;
+}
+
+.calendar_wrap nav .wp-calendar-nav-prev {
+    font-size: 14px;
+    display: block;
+    float: left;
+    margin-left: 5px;
+}
+.calendar_wrap nav .wp-calendar-nav-next {
+    font-size: 14px;
+    display: block;
+    float: right; 
+    margin-right: 5px;
+}
 /* 
 * calendar widget 
 

@@ -4,9 +4,12 @@
             <li id="search">
                 <?php get_search_form(); ?>
             </li>
-            <li id="calendar">
-                <h2><?php _e('Calendar'); ?></h2>
-                <?php get_calendar(); ?>
+                <li class="widget widget_calendar">
+                    <h2><?php _e('Calendar'); ?></h2>
+                    <div id="calendar_wrap" class="calendar_wrap">
+                        <?php get_calendar(); ?>
+                    </div>
+                </li>
             </li>
             <?php wp_list_pages(array(
                 'title_li' => '<h2>'.__('Pages').'</h2>',
