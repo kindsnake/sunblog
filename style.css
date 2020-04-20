@@ -576,54 +576,6 @@ a:hover, a:active{
     float: right; 
     margin-right: 5px;
 }
-/* 
-* calendar widget 
-
-.widget_calendar {
-	float: left;
-}
-#wp-calendar {
-	width: 100%;
-}
-#wp-calendar caption {
-	text-align: right;
-	color: #333;
-	font-size: 12px;
-	margin-top: 10px;
-	margin-bottom: 15px;
-}
-#wp-calendar thead {
-	font-size: 10px;
-}
-#wp-calendar thead th {
-	padding-bottom: 10px;
-}
-#wp-calendar tbody {
-	color: #aaa;
-}
-#wp-calendar tbody td {
-	background: #f5f5f5;
-	border: 1px solid #fff;
-	text-align: center;
-	padding: 8px;
-}
-#wp-calendar tbody td:hover {
-	background: #fff;
-}
-#wp-calendar tbody .pad {
-	background: none;
-}
-#wp-calendar tfoot #next {
-	font-size: 10px;
-	text-transform: uppercase;
-	text-align: right;
-}
-#wp-calendar tfoot #prev {
-	font-size: 10px;
-	text-transform: uppercase;
-	padding-top: 10px;
-}
-*/
 /********************************
 * Comments
 *********************************/
@@ -661,6 +613,27 @@ a:hover, a:active{
 #not-found {
     margin: 20px auto;
 }
+/***************************************
+* Search
+****************************************/
+.search-form .screen-reader-text {
+    display: none;
+}
+.search-form .search-field {
+    width:152px;   
+    height: 22px;     
+    padding: 1px;   
+    border:1px solid #ccc 
+}
+.search-form .search-submit {
+    background: #336699;     
+    width:22px;   
+    height:22px;   
+    border:none;
+    cursor:pointer;
+    margin-left: -4px;  
+}
+
 /***************************************
 * Footer
 ***************************************/
