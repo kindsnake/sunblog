@@ -257,7 +257,38 @@ a:hover, a:active{
 .top-menu ul li ul li:hover a{
     background-color: #111;
 }
-
+/***************************************
+* Footer Menu
+***************************************/
+.footer-menu {
+    clear: both;
+    width: 1110px;
+    margin: 0 auto;
+    background-color: #F00;
+}
+.footer-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 12px;
+}
+.footer-menu ul li {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 21px;
+    display: block;
+    float: left;
+    width: 100px;
+}
+.footer-menu ul li ul {
+    margin-left: 0.5em;
+    padding: 0;
+}
+.footer-menu ul li ul li {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
 /********************************
 * Post
 ********************************/
@@ -458,12 +489,63 @@ a:hover, a:active{
     text-align: left;
     margin-left: 10px;
 }
+.siderbar .wp-calendar-nav {
+    margin: 10px;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+}
 .sidebar .tagcloud {
     margin: 10px;
 }
-#wp-calendar table{
-    width: 100%;
+/* 
+* calendar widget 
+
+.widget_calendar {
+	float: left;
 }
+#wp-calendar {
+	width: 100%;
+}
+#wp-calendar caption {
+	text-align: right;
+	color: #333;
+	font-size: 12px;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+#wp-calendar thead {
+	font-size: 10px;
+}
+#wp-calendar thead th {
+	padding-bottom: 10px;
+}
+#wp-calendar tbody {
+	color: #aaa;
+}
+#wp-calendar tbody td {
+	background: #f5f5f5;
+	border: 1px solid #fff;
+	text-align: center;
+	padding: 8px;
+}
+#wp-calendar tbody td:hover {
+	background: #fff;
+}
+#wp-calendar tbody .pad {
+	background: none;
+}
+#wp-calendar tfoot #next {
+	font-size: 10px;
+	text-transform: uppercase;
+	text-align: right;
+}
+#wp-calendar tfoot #prev {
+	font-size: 10px;
+	text-transform: uppercase;
+	padding-top: 10px;
+}
+*/
 /********************************
 * Comments
 *********************************/
@@ -509,18 +591,21 @@ a:hover, a:active{
     min-height: 60px;
     background-color: #363636;
     clear: both;
-    position: relative;
     margin-top: 10px;
+    padding: 10px 0;
 }
 #footer{
+    clear: both;
     font-size: 9pt;
     line-height: 18px;
     width: 1110px;
     color: #ddd;
     text-align: left;
-    position: absolute;
-    margin-top:10px;
-    margin-bottom: 10px;
-    left: 50%;
-    margin-left: -555px;
+    margin: 0 auto;
+}
+.footer-split {
+    width: 1110px;
+    height: 20px;
+    margin: 0 auto;
+    clear: both;
 }

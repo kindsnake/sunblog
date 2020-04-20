@@ -1,5 +1,6 @@
 <?php 
 
+add_theme_support( 'nav-menus' );
 //特色图像
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(200, 150, true); // 图片宽度与高度
