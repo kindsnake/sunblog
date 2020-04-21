@@ -5,8 +5,8 @@
  ?>
 
 <?php get_header(); ?>
-    <div id="main-area">
-        <div id="container">
+    <div class="main-area">
+        <div class="container">
         <?php if(have_posts()): ?>
             <?php while(have_posts()): the_post(); ?>
                 <div class="post" id="post-<?php the_ID(); ?>">
