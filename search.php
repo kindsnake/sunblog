@@ -1,6 +1,14 @@
+<?php
+ /*
+ Template Name: Search
+ */
+ ?>
 <?php get_header(); ?>
-    <div id="main-area">
-        <div id="container">
+    <div class="main-area">
+        <div class="container">
+            <div class="page-header">
+                <p class="archive-title"><?php _e(' 关键词：'); ?><?php the_search_query(); ?></p>
+            </div>
             <?php if(have_posts()): ?>
                 <?php while(have_posts()): the_post(); ?>
                     <div class="post" id="post-<?php the_ID(); ?>">
@@ -10,7 +18,7 @@
                                 <span class="sub-meta"><?php _e(' 日期: '); ?><?php the_date('Y-m-d'); ?></span>
                                 <span class="sub-meta"><?php _e(' 分类: '); ?><?php the_category(','); ?></span>
                                 <span class="sub-meta"><?php _e(' 作者: '); ?><?php the_author(); ?></span>
-                                <span class="sub-meta"><?php _e(' 评论: '); ?><?php comments_popup_link('No Comments »', '1 Comment »', '% Comments »'); ?></span>
+                                <span class="sub-meta"><?php _e(' 评论: '); ?><?php comments_popup_link('撰写评论 »', '1条评论 »', '% 条评论 »'); ?></span>
                             </p>
                         </div>
                         <div class="entry">
