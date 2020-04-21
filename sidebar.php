@@ -37,7 +37,7 @@
             <li>
                 <h2><?php _e('Meta'); ?></h2>
                 <ul>
-                    <li><?php wp_loginout( home_url() ); ?></li>
+                    <li><?php wp_loginout( admin_url() ); ?></li>
                     <?php wp_meta(); ?>
                 </ul>
             </li>
