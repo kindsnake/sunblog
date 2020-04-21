@@ -27,6 +27,8 @@ function my_search_form( $form ) {
 }
 
 
+         
+
 //调用后台侧栏widget
 if (function_exists('register_sidebar'))
     register_sidebar();
@@ -122,6 +124,3 @@ add_filter('the_excerpt', 'sunblob_extract_excerpt');
 add_filter('pre_option_link_manager_enabled', '__return_true');
 //自定义搜索框
 add_filter( 'get_search_form', 'my_search_form' );
-
-
-
