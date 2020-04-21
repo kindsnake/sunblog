@@ -43,8 +43,8 @@
             </div>
         </div>
     </div>
-    <div class="nav-box">
-        <div class="nav">
+    <div class="main-nav-box">
+        <div class="main-nav">
             <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
         </div>
     </div>
