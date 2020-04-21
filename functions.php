@@ -14,6 +14,19 @@ add_theme_support( 'custom-logo', array(
         'flex-height' => true,
     ) );
 
+//自定义搜索框
+function my_search_form( $form ) {
+    $form = '<form role="search" method="get" class="search-form" action="' . home_url( '/' ) . '" >
+    <label>
+        <span class="screen-reader-text">搜索：</span>
+        <input type="search" class="search-field" placeholder="输入关键词开始搜索&hellip;" value="' . get_search_query() . '" name="s" />
+    </label>
+    <input type="submit" class="search-submit" value="'. esc_attr__('Search') .'" />
+    </form>';
+    return $form;
+}
+
+
 //调用后台侧栏widget
 if (function_exists('register_sidebar'))
     register_sidebar();
@@ -107,5 +120,8 @@ function sunblob_extract_excerpt($text, $lenth=160) {
 add_filter('the_excerpt', 'sunblob_extract_excerpt');
 //WordPress 恢复链接管理功能
 add_filter('pre_option_link_manager_enabled', '__return_true');
+//自定义搜索框
+add_filter( 'get_search_form', 'my_search_form' );
+
 
 

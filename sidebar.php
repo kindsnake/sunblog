@@ -2,7 +2,10 @@
     <ul>
         <?php if ( function_exists('dynamic_sidebar') && dynamic_sidebar() ) : else : ?>
             <li id="search">
-                <?php get_search_form(); ?>
+                <h2><?php _e('Search'); ?></h2>
+                <div class="sidebar-search-box">
+                    <?php get_search_form(); ?>
+                </div>
             </li>
                 <li class="widget widget_calendar">
                     <h2><?php _e('Calendar'); ?></h2>
