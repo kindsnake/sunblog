@@ -84,7 +84,7 @@ a:hover, a:active{
     float: right;
 }
 
-#main-area {
+.main-area {
     width: 1110px;
     margin: 0 auto;
     padding: 0;
@@ -323,24 +323,30 @@ a:hover, a:active{
 /********************************
 * Post
 ********************************/
-#container{
+.container{
     display: block;
     width: 750px;
     display: block;
     float: left;
     overflow: hidden;
 }
-.post{
+.page-header, .post{
     display: block;
     overflow: hidden;
     width: 748px;
-    min-height: 50px;
+    min-height: 30px;
     border-top: solid 3px #336699;
     margin-bottom: 10px;
     background-color: #FFF;
     border-left: solid 1px #ccc;
     border-right: solid 1px #ccc;
     border-bottom: solid 1px #ccc;
+}
+.page-header .archive-title {
+    font-size: 14px;
+    line-height: 40px;
+    width: 700px;
+    margin-left: 24px;
 }
 .post h2{
     font-family: Georgia, Sans-serif;
