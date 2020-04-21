@@ -69,14 +69,14 @@ a:hover, a:active{
     float: left;
 }
 #header-search-box {
-    height: 30px;
+    height: 50px;
     width:200px;
     display: block;
     float: right;
     margin-right: 25px;
     overflow: hidden;
     position: relative;
-    margin-top: 15px;
+    margin-top: 5px;
 }
 #header-search-box #searchform {
     line-height: 55px;
@@ -484,6 +484,12 @@ a:hover, a:active{
     margin: 0 0 0 10px;
     display: inline;
 }
+.sidebar select {
+    width: 330px;
+    height: 30px;
+    margin: 10px;
+    padding: 0;
+}
 .sidebar ul{
     list-style-type: none;
     margin: 0;
@@ -521,6 +527,7 @@ a:hover, a:active{
     position: relative;
     overflow: hidden;
 }
+
 .siderbar .wp-calendar-nav {
     margin: 10px;
     height: 30px;
@@ -621,6 +628,11 @@ a:hover, a:active{
 ****************************************/
 .screen-reader-text {
     display: none;
+}
+.search-form {
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
 }
 .search-field {
     width: 100%;
