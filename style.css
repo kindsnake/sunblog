@@ -266,54 +266,54 @@ a:hover, a:active{
 /***************************************
 * Footer Menu
 ***************************************/
-.menu-footer-menu-container {  
+.footer-menu {  
     clear: both;
     width: 1110px;
     margin: 0 auto;
     height: auto;
     overflow: hidden;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-.menu-footer-menu-container a {
+.footer-menu a {
     text-decoration: none;
     color: #FFF;
 }
-.menu-footer-menu-container a:link {
+.footer-menu a:link {
     text-decoration: none;
     color: #FFF;
 }
-.menu-footer-menu-container a:visited {
+.footer-menu a:visited {
     text-decoration: none;
     color: #FFF;
 }
-.menu-footer-menu-container a:hover {
+.footer-menu a:hover {
     text-decoration: none;
     color: #336699;
 }
-.menu-footer-menu-container a:active {
+.footer-menu a:active {
     text-decoration: none;
     color: #336699;
 }
 
-.menu-footer-menu-container ul {
+.footer-menu ul {
     padding: 0;
     margin: 0;
     list-style: none;
     display: inline-block;
 }
-.menu-footer-menu-container ul li {
+.footer-menu ul li {
     display: block;
     float: left;
     width: 100px;
     font-size: 14px;
     line-height: 21px;
 }
-.menu-footer-menu-container ul li ul {
+.footer-menu ul li ul {
     display: inline-block;
     width: 100px;
     display: inline-block;
 }
-.menu-footer-menu-container ul li ul li {
+.footer-menu ul li ul li {
     width: 90px;
     height: 18px;
     font-size: 12px;
